@@ -1,0 +1,27 @@
+package api.service;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import api.domain.Consulta;
+import api.domain.Producto;
+import api.Util;
+import javax.ws.rs.core.*;
+@Path("/api/v1/Productos")
+@Consumes(value = MediaType.APPLICATION_JSON)
+@Produces(value = MediaType.APPLICATION_JSON)
+public class consultaProductos {
+	@POST
+	public Response createConsulta(Consulta consultaRequest) {
+		Producto[] obj =null;
+		try {
+			 obj = Util.apigwProducto(consultaRequest.url, consultaRequest.Codigo);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return Response.ok(obj).build();
+	}
+
+}

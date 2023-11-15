@@ -1,0 +1,2175 @@
+!SESSION 2023-11-13 15:32:53.937 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 15:32:57.648
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-13 15:32:57.815
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-13 15:33:02.970
+!MESSAGE Logback config file: C:\Users\PC\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-11-13 15:33:04.729
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-13 15:33:04.729
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-13 15:33:11.973
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\PC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:33:47.231
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                     "org.apache.maven.plugins.war.WarMojo"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$207546934.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$207546934.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 50 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @590478a9
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	... 71 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:33:47.568
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:33:47.575
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:33:47.586
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugins.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugins.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugins.war.util.WebappStructureSerializer
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$207546934.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$207546934.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-6: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$207546934.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$207546934.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	... 18 more
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 15:34:42.885
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 15:34:42.886
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 15:34:42.887
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 15:34:42.888
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 15:34:42.896
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 15:34:42.900
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:39:58.021
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                     "org.apache.maven.plugins.war.WarMojo"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:388)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$3(ProjectConfigurationManager.java:340)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1097)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:339)
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$304049833.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$304049833.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 40 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @3237963a
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	... 61 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:40:01.167
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:40:01.173
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:40:01.607
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                     "org.apache.maven.plugins.war.WarMojo"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$394904811.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$394904811.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @3a9452af
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	... 74 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:52:25.225
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-13 15:52:25.230
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-11-13 15:54:01.871
+!MESSAGE File not found: D:\Cursos\Fundamentos de arquitectura de software\proyecto\WebServices\pom.xml.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/WebServices/pom.xml)[368]: java.lang.Exception: File not found: D:\Cursos\Fundamentos de arquitectura de software\proyecto\WebServices\pom.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:881)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:298)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:586)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:488)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:367)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:319)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2023-11-13 15:54:01.873
+!MESSAGE File not found: D:\Cursos\Fundamentos de arquitectura de software\proyecto\WebServices\pom.xml.
+!STACK 0
+java.lang.Exception: File not found: D:\Cursos\Fundamentos de arquitectura de software\proyecto\WebServices\pom.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:881)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:298)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:586)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:488)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:367)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:319)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-11-13 16:37:54.842 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-13 16:37:56.783
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-13 16:37:57.030
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-13 16:38:06.759
+!MESSAGE Logback config file: C:\Users\PC\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-11-13 16:38:08.197
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-13 16:38:08.197
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 16:38:11.521
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 16:38:11.525
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 16:38:11.529
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 16:38:11.533
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 16:38:11.546
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-13 16:38:11.553
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-13 16:38:12.434
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\PC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2023-11-14 17:30:14.596 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-14 17:30:39.733
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-14 17:30:39.990
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-14 17:31:07.278
+!MESSAGE Logback config file: C:\Users\PC\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-11-14 17:31:09.099
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-14 17:31:09.099
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-14 17:31:13.826
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\PC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:16:31.688
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:16:31.700
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:16:33.114
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                     "org.apache.maven.plugins.war.WarMojo"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$212956966.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$212956966.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @2cf8403c
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	... 74 more
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-14 18:29:13.126
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-14 18:29:13.130
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-14 18:29:13.135
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-14 18:29:13.139
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-14 18:29:13.152
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-11-14 18:29:13.159
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:32:18.428
+!MESSAGE The POM for org.springframework.boot:spring-boot-starter-thymeleaf:jar:5.2.10.RELEASE is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:32:22.971
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                     "org.apache.maven.plugins.war.WarMojo"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$223906522.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$223906522.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 50 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @34972394
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	... 71 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:32:23.740
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:32:23.746
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:32:23.758
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugins.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugins.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugins.war.util.WebappStructureSerializer
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$223906522.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$223906522.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-49: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$223906522.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$223906522.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	... 18 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-11-14 18:32:29.929
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-thymeleaf:5.2.10.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:5.2.10.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:584)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:553)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:538)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:5.2.10.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2023-11-14 18:32:29.930
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:5.2.10.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2023-11-14 18:32:29.930
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:5.2.10.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:33:17.623
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                     "org.apache.maven.plugins.war.WarMojo"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$230002979.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$230002979.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 50 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @47cfb9e2
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	... 71 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:33:17.851
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:33:17.855
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:33:17.865
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugins.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugins.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugins.war.util.WebappStructureSerializer
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$230002979.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$230002979.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-55: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$230002979.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$230002979.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	... 18 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:38:25.420
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: ExceptionInInitializerError
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                     "org.apache.maven.plugins.war.WarMojo"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 50 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @64c53b58
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:40)
+	at com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+	... 71 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:38:25.599
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:38:25.605
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:38:25.614
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugins.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugins.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugins.war.util.WebappStructureSerializer
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-49: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	... 18 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:38:32.447
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:38:32.452
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:38:32.460
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugins.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugins.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugins.war.util.WebappStructureSerializer
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-49: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	... 18 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:50:13.790
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:50:13.796
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 18:50:13.806
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugins.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugins.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugins.war.util.WebappStructureSerializer
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-49: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	... 18 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 21:05:04.091
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 21:05:04.097
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-11-14 21:05:04.108
+!MESSAGE Error injecting: org.apache.maven.plugins.war.WarMojo
+!STACK 0
+com.google.inject.ProvisionException: Unable to provision, see the following errors:
+
+1) [Guice/ErrorInjectingConstructor]: NoClassDefFoundError: Could not initialize class WebappStructureSerializer
+  at WarMojo.<init>(WarMojo.java:54)
+  while locating WarMojo
+
+Learn more:
+  https://github.com/google/guice/wiki/ERROR_INJECTING_CONSTRUCTOR
+
+1 error
+
+======================
+Full classname legend:
+======================
+WarMojo:                   "org.apache.maven.plugins.war.WarMojo"
+WebappStructureSerializer: "org.apache.maven.plugins.war.util.WebappStructureSerializer"
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.InternalProvisionException.toProvisionException(InternalProvisionException.java:251)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1104)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator$1.build(AbstractMavenArchiverConfigurator.java:178)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.lambda$2(MavenBuilderImpl.java:153)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilderImpl.build(MavenBuilderImpl.java:133)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:164)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$1.method(MavenBuilder.java:1)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:109)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:228)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:100)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:83)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:192)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1079)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:207)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:300)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache.maven.plugins.war.util.WebappStructureSerializer
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	... 53 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "Worker-49: Building"]
+	at com.thoughtworks.xstream.XStream.setupConverters(XStream.java:832)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:496)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:465)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:411)
+	at com.thoughtworks.xstream.XStream.<init>(XStream.java:378)
+	at org.apache.maven.plugins.war.util.WebappStructureSerializer.<clinit>(WebappStructureSerializer.java:47)
+	at org.apache.maven.plugins.war.AbstractWarMojo.<init>(AbstractWarMojo.java:344)
+	at org.apache.maven.plugins.war.WarMojo.<init>(WarMojo.java:54)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.GUICE$TRAMPOLINE(<generated>)
+	at org.apache.maven.plugins.war.WarMojo$$FastClassByGuice$$236801117.apply(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.access$000(ConstructorInjector.java:33)
+	at com.google.inject.internal.ConstructorInjector$1.call(ConstructorInjector.java:98)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:93)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1139)
+	at org.eclipse.sisu.space.AbstractDeferredClass.get(AbstractDeferredClass.java:48)
+	at com.google.inject.internal.ProviderInternalFactory.provision(ProviderInternalFactory.java:86)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.provision(InternalFactoryToInitializableAdapter.java:57)
+	at com.google.inject.internal.ProviderInternalFactory$1.call(ProviderInternalFactory.java:67)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:109)
+	at com.google.inject.internal.ProvisionListenerStackCallback$Provision.provision(ProvisionListenerStackCallback.java:124)
+	at com.google.inject.internal.ProvisionListenerStackCallback.provision(ProvisionListenerStackCallback.java:66)
+	at com.google.inject.internal.ProviderInternalFactory.circularGet(ProviderInternalFactory.java:62)
+	at com.google.inject.internal.InternalFactoryToInitializableAdapter.get(InternalFactoryToInitializableAdapter.java:47)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+	at org.eclipse.sisu.inject.Guice4$1.get(Guice4.java:162)
+	at org.eclipse.sisu.inject.LazyBeanEntry.getValue(LazyBeanEntry.java:81)
+	at org.eclipse.sisu.plexus.LazyPlexusBean.getValue(LazyPlexusBean.java:51)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:263)
+	at org.codehaus.plexus.DefaultPlexusContainer.lookup(DefaultPlexusContainer.java:255)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getConfiguredMojo(DefaultMavenPluginManager.java:491)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.getConfiguredMojo(MavenImpl.java:210)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.reflectManifestGeneration(AbstractMavenArchiverConfigurator.java:439)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.lambda$3(AbstractMavenArchiverConfigurator.java:398)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:394)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:275)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:214)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.generateManifest(AbstractMavenArchiverConfigurator.java:371)
+	at org.eclipse.m2e.mavenarchiver.internal.AbstractMavenArchiverConfigurator.mavenProjectChanged(AbstractMavenArchiverConfigurator.java:228)
+	at org.eclipse.m2e.wtp.mavenarchiver.AbstractWTPArchiverConfigurator.mavenProjectChanged(AbstractWTPArchiverConfigurator.java:56)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.mavenProjectChanged(ProjectConfigurationManager.java:883)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:889)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:1041)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:321)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:146)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:84)
+	... 18 more
+!SESSION 2023-11-14 21:58:42.964 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_PE
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-11-14 21:58:45.073
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-14 21:58:45.341
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-11-14 21:58:47.882
+!MESSAGE Logback config file: C:\Users\PC\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-11-14 21:58:49.810
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-11-14 21:58:49.810
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-11-14 21:58:54.002
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\PC'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
